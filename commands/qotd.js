@@ -16,7 +16,7 @@ message.guild.roles.find(r => r.name == "QOTD").setMentionable(true, 'QOTD Menti
 
 setTimeout(() => {
 
-message.guild.roles.find(r => r.name == "QOTD").setMentionable(flase, 'QOTD Mention Timeout').then(() => {
+message.guild.roles.find(r => r.name == "QOTD").setMentionable(false, 'QOTD Mention Timeout').then(() => {
 
 message.channel.send(`QOTD Role is now unmentionable. <@${message.author.id}>`);
 
