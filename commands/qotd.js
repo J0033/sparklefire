@@ -25,7 +25,7 @@ message.channel.send(`QOTD Role is now unmentionable. <@${message.author.id}>`);
  }, 8500);
 
 });
-
+}
 	},
 
 };
