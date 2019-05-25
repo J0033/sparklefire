@@ -19,7 +19,15 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
-	if (!message.content.startsWith(prefix) || message.author.bot) return;
+	if (message.channel.id == "581841026851799041 {
+        let fetched = await message.channel.fetchMessages({
+            limit: 2
+        })
+        if (isNaN(message.content)) message.delete()
+        if ((parseInt(message.content) - parseInt(fetched.last().content)) != 1) message.delete()
+        if((message.author.id == fetched.last().author.id)) message.delete()
+    };
+if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const commandName = args.shift().toLowerCase();
