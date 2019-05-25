@@ -18,7 +18,7 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.on('message', message => {
+client.on('message', async message => {
 	if (message.channel.id == "581841026851799041") {
         let fetched = await message.channel.fetchMessages({
             limit: 2
