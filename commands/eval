@@ -3,6 +3,7 @@ module.exports = {
 	name: 'eval',	description: 'evaluate code!',
 
 	execute(message, args) {
+console.log("u can see me 4head");
 if (message.author.id != "556969659531001858") return message.channel.send("You do not have permissions 4head");
 
         const clean = text => {
