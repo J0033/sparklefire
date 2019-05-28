@@ -1,8 +1,9 @@
 module.exports = {
 
-	name: 'pong',	description: 'Ping!',
+	name: 'pong',	
+	description: 'Ping!',
 
-	execute(message, args) {
+	execute:(message, args) => {
 
         let start = Date.now();
 
