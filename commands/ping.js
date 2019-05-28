@@ -1,5 +1,5 @@
 module.exports = {
-	name: 'eval',
+	name: 'ping',
 	description: 'Ping!',
 	execute(message, args) {
         let start = Date.now();
