@@ -2,7 +2,7 @@ module.exports = {
 	name: 'eval',
 	description: 'evaluate code!',
 	execute: async(message, args) => {
-        if (message.author.id != "556969659531001858")
+        if (message.author.id != "556969659531001858") return;
 
         function clean(text) {
 
