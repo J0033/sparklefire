@@ -54,7 +54,7 @@ module.exports = {
 
         } catch (err) {
 
-            message.channel.send(`\`\`\`js\n${clean(err.stack)}\n\`\`\``);
+            message.channel.send(`\`\`\`js\n${clean(err.message)}\n\`\`\``);
 
         }
 	},
